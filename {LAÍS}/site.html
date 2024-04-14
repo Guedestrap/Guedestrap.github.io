@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Laís</title>
+
+<link rel="stylesheet" href="arquivo.css">
+<body style="background-color: white;">
+    <div style="text-align: center;">
+        <p style="color: #d3c6cf;">Eu e amor da minha vida em varios momentos felizes que eu nunca vou esquecer, amo muito ela, em cada momento ao lado dela, descubro novas razões para gostar dela.
+            Queria pegar um momento só pra dizer o quanto você é especial pra mim, quero te dizer o quanto você é incrível, obrigado por ser quem você é e por fazer parte da minha vida. TE AMO DEMAIS</p>
+
+        
+    <img src="foto2.jpg" alt="">
+    <img src="foto3.jpg" alt="">
+    <img src="foto4.jpg" alt="">
+    <img src="foto5.jpg" alt="">
+
+
+    <style>
+    body {
+        background-image: url('foto1.jpg'); /* Substitua pelo caminho da sua imagem */
+        background-size: cover; /* Para garantir que a imagem cubra todo o background */
+        background-position: center; /* Para centralizar a imagem no background */
+        /* Adicione outros estilos que desejar para o corpo do seu site */
+    }
+</style>
+
+    </script
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Define a altura para ocupar toda a altura da tela */
+    }
+
+    .escondido {
+        display: none;
+    }
+
+    .heart {
+        position: absolute;
+        color: red;
+        font-size: 2000%px; /* Tamanho do emoji ajustado para 36 pixels */
+        z-index: 9999;
+        pointer-events: none;
+        animation: animateHeart 2s linear;
+    }
+
+    @keyframes animateHeart {
+        0% {
+            transform: translateY(0) rotate(45deg) scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-800px) rotate(45deg) scale(0.1);
+            opacity: 0;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+<button id="botaoAmor" style="color:blueviolet">TE AMO</button>
+<p style="color: rgb(225, 0, 255);" id="mensagemAmor" class="escondido">Eu te amo!</p>
+
+</div>
+
+<script>
+document.getElementById('botaoAmor').addEventListener('click', function() {
+    document.getElementById('mensagemAmor').classList.remove('escondido');
+    
+    for (let i = 0; i < 10; i++) {
+        createHeart();
+    }
+});
+
+function createHeart() {
+    const heart = document.createElement('div');
+    heart.innerHTML = '❤️'; // Emoji de coração
+    heart.classList.add('heart');
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = Math.random() * 2 + 1 + 's';
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 2000);
+}
+</script>
+    </div>
+
+    <h1>PARA LAÍS</h1>
+    
+    <p style="color: darkred;"></p> <h2>EU PODERIA ESCREVER MILHARES DE TEXTOS FALANDO SOBRE O QUANTO VOCE É IMPORTANTE PRA MIM, MAS NAO CABERIA NEM EM TODOS OS SITES DO MUNDO!!! AMO VOCE DEMAIS, PRECISO DE VOCE TODOS OS DIAS...
+        BEIJOSSSS</h2>
+        
+        
+        
+</body>
+</html>
+

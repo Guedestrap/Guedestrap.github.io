@@ -1,0 +1,61 @@
+img {
+    width: 15%px; /*largura desejada */
+    height: 300px; /*altura maxima*/
+}
+
+
+/* Estilos CSS para o corpo do site */
+body {
+    background-image: url('foto1.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Adicione outros estilos que desejar para o corpo do seu site */
+}
+
+
+* {
+    border-radius: 10px; /* Define o raio da borda para todos os elementos */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Define a altura para ocupar toda a altura da tela */
+}
+
+.escondido {
+    display: none;
+}
+
+.heart {
+    position: absolute;
+    color: red;
+    width: 190px;
+    height: 100px;
+    z-index: 9999;
+    pointer-events: none;
+    animation: animateHeart 10s linear;
+}
+
+@keyframes animateHeart {
+    0% {
+        transform: translateY(0) rotate(45deg) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-800px) rotate(45deg) scale(0.1);
+        opacity: 0;
+    }
+}
+
+h1 {
+     color: rgb(143, 22, 22);
+}
+
+h2 {
+    color: rgb(151, 20, 20);
+}
+
+
+
